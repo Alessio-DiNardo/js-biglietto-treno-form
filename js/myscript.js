@@ -11,7 +11,8 @@ const button =document.querySelector("button");
 console.log(button);
 
 button.addEventListener("click", function() {
-    
+    let price = 0.23 * distance;
+    console.log(distance)
     if ( inputAge < 18){
         price = price - (price * (19.4 / 100));
         console.log(price.toFixed(2));
