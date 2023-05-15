@@ -1,32 +1,12 @@
-const userAge = parseInt(prompt("Insert your age"));
+const userAge = parseInt;
+const distance = parseInt;
 
-const currentYear = 2023;
+let price = distance * 0.23;
 
-let yearOfBirth = currentYear - userAge;
+if ( age < 18){
+    price = price - (price * (19.4 / 100));
+} else if ( age >= 65) {
+    price = price - (price * (37.7 / 100));
+}
 
-console.log(yearOfBirth);
-
-const distance = parseInt(prompt("insert your kilometers"))
-
-const priceForKm = 0.23;
-
-let price = priceForKm * distance;
-
-console.log(price);
-
-
-
-
-if (userAge < 18) {
-        let discount =(19,4 / 100) * price;
-        let totale = price - discount;
-        document.getElementById("ticket").innerHTML = totale.toFixed(2)
-        console.log(discount.toFixed(2));
-
-} else if (userAge > 65) {
-        let discount =(37,7 / 100) * price;
-        let totale = price - discount;
-        document.getElementById("ticket").innerHTML = totale.toFixed(2)
-        console.log(discount.toFixed(2))
-} else {}
-
+document.getElementById("output").innerHTML = price + "€";
